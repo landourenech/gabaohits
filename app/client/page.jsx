@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 export default function Client() {
   // Exemple de données musicales (à remplacer par les données réelles)
@@ -46,6 +47,9 @@ export default function Client() {
             ))}
           </div>
         </div>
+        <button className="bg-">
+        <Link href="./album/">Aller dans l'album</Link>
+      </button>
       </div>
     </>
   );
